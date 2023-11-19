@@ -56,6 +56,24 @@ body {
     margin-left: 2em;
     max-width: 12em;
 }
+.nav li:hover {
+    background-color: greenyellow;
+}
+.nav li:first-child {
+    background-color: magenta;
+}
+.nav li:first-child:hover {
+    background-color: greenyellow;
+}
+
+.nav li:last-child {
+    background-color: lightgreen;
+    color: gold;
+}
+.nav li:last-child:hover {
+    background-color: gold;
+    color: greenyellow;
+}
 
 @media (max-width: 767px) {
     .title, .logo {
@@ -77,6 +95,30 @@ body {
 .title p {
     font-style: italic;
 }
+
+/* Home   */
+
+.box_index_page {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    max-height: 50%;
+    background-color: lightgreen;
+    border: solid brown;
+}
+.box_index_page_left {
+    max-width: 50%;
+    float: left;
+    border: 2px solid blue;
+}
+.box_index_page_right {
+    max-width: 50%;
+    float: right;
+    border: 2px solid red;
+}
+/* .box_picture_familjen {
+    border: 1px solid yellow;
+}  */
 
 /* Footer */
 
@@ -118,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     max-width: 100%;
+    float: right;
 }
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
