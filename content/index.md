@@ -16,3 +16,5 @@ Jag har jobbat under ca 40 år med programmering (Mainframe-utveckling) i storda
 
 Programmeringen var främst i programspråket Cobol.
 
+Här en bild på min familj: `%assets/img/familjen.jpg`
+
