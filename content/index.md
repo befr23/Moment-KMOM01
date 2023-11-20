@@ -6,12 +6,12 @@ Description: This is our index page.
 Home page for Bengt
 ==========================
 
-Jag är pensionär sen ca 3,5 år tillbaks.<br>
-Har jobbat under ca 40 år med programmering (Mainframe-utveckling) i stordator.<br>
-Programmeringen var främst i programspråket Cobol.<br><br>
+Jag är pensionär sen ca 3,5 år tillbaks.
+Har jobbat under ca 40 år med programmering (Mainframe-utveckling) i stordator.
+Programmeringen var främst i programspråket Cobol.
 
 Har familj med två yngre barn, 10 och 9 år samt två bonusbarn (ungdomar) som är äldre.<br>
-Här en bild på min familj:<br>
-`%assets_url%/img/familjen.jpg`
+Här en bild på min familj:
 
-`![Min familj](%assets_url%/img/familjen.jpg)`
+![Familjen](%assets_url%/img/familjen.jpg "Bengts familj"){.home-pic1}
+
