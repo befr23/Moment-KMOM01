@@ -3,23 +3,13 @@ Title: Hobby
 Description: Page about my hobby
 ---
 
-Min hobby
+Min hobby/fritidsintressen
 ==========================
 
-Jag har flera olika sort hobby-intressen:
+<p>Har ganska många hobbys/fritidsintressen, men då man har familj och ganska små barn så 'hindrar' familjelivet en hel del (på gott och ont). Så familjeliv tar en stor del av min tid.</p>
 
-Är med i en kristen församling, Folkkyrkan Eskilstuna. Där är vi delaktiga i att skötta en fritidsgård.
+<p>Ett intresse är att vara med i Eskilstuna Vapenhistoriska Förening (se bild ovan). Där är jag Skarpskytt, då tränar vi vapenexercis, mascherar och skjuter med gevär.</p>
 
-En annan hobby är att vara skarpskytt och är då i detta sammanhang med i Eskilstuna Vapenhistoriska Förening (se bild ovan).
-
-
-
-Jag har när jag var yngre spelat fotboll. Det är en rolig och härlig sport. Men ganska jobbigt när man ska träna.
-
-Även wolleyboll har jag provat på, tidigare. Är också en rolig och intressant sport.
-
-Jag spelade faktiskt även lite bordtennis för några dagar sedan.
-
-
-Nu när jag är äldre, är det 'bara' promenader när det gäller att sporta.
-
+<p>Är även med i en kristen församling, Folkkyrkan Eskilstuna. Där är vi bla delaktiga i att skötta en fritidsgård för ungdomar.
+</p>
+´%assets_url%/img/Jesus_at_the_center.jpg`
