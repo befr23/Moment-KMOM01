@@ -54,7 +54,8 @@ body {
 .logo {
     padding: 3em 3em 3em 0;
     margin-left: 2em;
-    max-width: 12em;
+    /* max-width: 12em;  Ändrat 2023-11-20 */
+    max-width: 8em;
 }
 .nav li:hover {
     background-color: greenyellow;
@@ -96,30 +97,6 @@ body {
     font-style: italic;
 }
 
-/* Home   */
-
-.box_index_page {
-    display: flex;
-    flex-direction: row;
-    min-height: 300px;
-    max-height: 50%;
-    background-color: lightgreen;
-    border: solid brown;
-}
-.box_index_page_left {
-    max-width: 50%;
-    float: left;
-    border: 2px solid blue;
-}
-.box_index_page_right {
-    max-width: 50%;
-    float: right;
-    border: 2px solid red;
-}
-/* .box_picture_familjen {
-    border: 1px solid yellow;
-}  */
-
 /* Footer */
 
 .footer {
@@ -131,6 +108,10 @@ body {
 
 .footer a {
     color: #222;
+}
+.footer a:hover {
+    background-color: red;
+    color: greenyellow;
 }
 
 .footer .social {
