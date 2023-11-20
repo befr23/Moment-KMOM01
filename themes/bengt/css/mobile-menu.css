@@ -22,10 +22,26 @@
     display: none;
 }
 
+/* Bengt Tillagt 2023-11-20 start */
+.logo {
+    padding: 1em 1em 1em 0;
+    margin-left: 0.1em;
+    max-width: 0.2em;
+}
+/* Bengt Tillagt 2023-11-20 slut */
+
 @media (max-width: 767px) {
     .header {
         flex-direction: column;
     }
+
+    /* Bengt Tillagt 2023-11-20 start */
+    .logo {
+        padding: 1em 1em 1em 0;
+        margin-left: 0.1em;
+        max-width: 0.2em;
+    }
+    /* Bengt Tillagt 2023-11-20 slut */
 
     .nav ul {
         flex-direction: column;
