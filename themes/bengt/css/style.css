@@ -75,6 +75,25 @@ body {
     background-color: gold;
     color: greenyellow;
 }
+.home-pic1 {
+    float:left;
+    max-width: 300px;
+}
+.hobby-pic1 {
+    float:left;
+    border: 3px solid blue;
+    max-width: 600px;
+}
+.hobby-pic2 {
+    float:inherit;
+    border: 3px solid blue;
+    max-width: 233px;
+}
+.hobby-pic3 {
+    float:left;
+    border: 3px solid blue;
+    max-width: 300px;
+}
 
 @media (max-width: 767px) {
     .title, .logo {
@@ -86,6 +105,21 @@ body {
     }
     .logo {
         max-width: 30%;
+    }
+    .hobby-pic1 {
+        float:left;
+        border: 1px solid blue;
+        max-width: 200px;
+    }
+    .hobby-pic2 {
+        float:inherit;
+        border: 1px solid blue;
+        max-width: 133px;
+    }
+    .hobby-pic3 {
+        float:left;
+        border: 1px solid blue;
+        max-width: 200px;
     }
 }
 
