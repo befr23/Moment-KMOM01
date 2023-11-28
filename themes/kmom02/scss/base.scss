@@ -1,0 +1,52 @@
+body {
+    /* background-color: $background-color-body;  */
+    @include background-color;
+}
+
+head,
+.header,
+.main,
+.footer {
+    width: 64rem;
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
+}
+
+.header {
+    background-color: $background-color-header;
+}
+
+.main {
+    background-color: $background-color-main;
+}
+
+.footer {
+    background-color: $background-color-footer;
+
+    .social,
+    .social:a,
+    .social:i,
+    .social.a
+    .social.i
+     {
+        background-color: $background-color-footer;
+        float: right;
+    }
+}
+/* .social,
+.social:a,
+.social:i,
+.social.i {
+    background-color: inherit;
+    float: right;
+}   */
+
+/* .social {
+    background-color: inherit;
+    a {
+        float: right;
+    }
+    i {
+        float: right;
+    }
+}  */
