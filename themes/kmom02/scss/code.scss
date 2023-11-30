@@ -23,6 +23,10 @@
     display: none;
 }
 
+img {
+    max-width: 30em;
+}
+
 /* Bengt Tillagt 2023-11-20 start */
 .logo {
     padding: 1em 1em 1em 0;
@@ -30,45 +34,3 @@
     max-width: 0.2em;
 }
 /* Bengt Tillagt 2023-11-20 slut */
-
-/* @media (max-width: 767px) {   ändrat 2023-11-26 */
-@media (max-width: 920px) {
-    .header {
-        flex-direction: column;
-    }
-
-    /* Bengt Tillagt 2023-11-20 start */
-    .logo {
-        padding: 1em 1em 1em 0;
-        margin-left: 0.1em;
-        max-width: 0.2em;
-    }
-    /* Bengt Tillagt 2023-11-20 slut */
-
-    .nav ul {
-        flex-direction: column;
-        padding-bottom: 1em;
-    }
-
-    .nav ul li {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav ul li a {
-        display: block;
-        padding: 0.5em 0;
-    }
-
-    .js .nav-toggle {
-        display: block;
-        float: right;
-        width: 2em;
-        margin: 0.6667em 0;
-        font-size: 1.5rem;
-        line-height: 2em;
-        text-align: center;
-        cursor: pointer;
-    }
-}
