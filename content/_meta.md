@@ -7,8 +7,8 @@ Social:
       icon: fab fa-github
     - title: Link till Bengts webbsida.
       url: https://www.bfranklin.se
-      icon: fa-regular fa-image
+      icon: fa fa-globe
     - title: Link till Bengts Facebook-sida.
       url: https://www.facebook.com/bengt.franklin
-      icon: fa-brands fa-facebook
+      icon: fab fa-facebook
 ---
