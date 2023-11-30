@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Inkludera normalize.css */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -6,7 +7,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap");
 html {
   line-height: 1.15; /* 1 */
@@ -6426,10 +6426,9 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/* Ikoner och fonter - slut  */
-/* Fonts from https://fonts.google.com/ */
-/* $background-color-body: #8a2be2;  */
+/* Ikoner och fonter, från Font Awesome - slut  */
 .old-fashioned {
+  font-family: "Meriweater", serif;
   font-size: 1.4em;
   line-height: 1.4;
   width: 64rem;
@@ -6446,7 +6445,8 @@ readers do not read off random characters that represent icons */
   margin-bottom: 1.96rem;
   margin: 1.96rem auto;
   color: #333;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .worst-ever {
@@ -6470,10 +6470,27 @@ h3 {
   margin: 1.96rem auto;
   color: #333;
   letter-spacing: 1px;
+  /* font-size: 1.4em;
+  line-height: 1.4;
+  width: 64rem;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
+  color: #333;
+  letter-spacing: 1px;  */
 }
 
 p {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-size: 1.4em;
+  line-height: 1.4;
+  width: 64rem;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 h1,
@@ -6482,11 +6499,22 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+html {
+  font-size: 100%;
+}
+
+.main {
+  width: 64rem;
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 112, 5%;
+  }
+}
 body {
-  /* background-color: $background-color-body;  */
   background-color: #DDA0DD;
-  box-shadow: 0 0 1px rgba(221, 160, 221, 0.3);
-  color: #fff;
+  /* @include background-color;  */
 }
 
 head,
@@ -6508,16 +6536,31 @@ head,
 
 .footer {
   background-color: #00ffff;
+  display: flex;
+  flex-direction: row;
 }
-.footer .social,
-.footer .social:a,
-.footer .social:i,
-.footer .social.a .social.i {
-  background-color: #00ffff;
-  float: right;
+
+.social-text {
+  display: inherit;
+  max-width: 70%;
+}
+
+.social {
+  display: inherit;
+  border-top: 15em;
+  max-width: 30%;
 }
 
 /* .social,
+.social:a,
+.social:i,
+.social.a
+.social.i {
+    display: inline;
+    background-color: $background-color-footer;
+}
+
+/* .social > row1
 .social:a,
 .social:i,
 .social.i {
@@ -6558,6 +6601,10 @@ head,
   display: none;
 }
 
+img {
+  max-width: 30em;
+}
+
 /* Bengt Tillagt 2023-11-20 start */
 .logo {
   padding: 1em 1em 1em 0;
@@ -6568,6 +6615,16 @@ head,
 /* Bengt Tillagt 2023-11-20 slut */
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
 @media (max-width: 920px) {
+  /* tillagt 2023-11-29 start */
+  head,
+  .header,
+  .main,
+  .footer {
+    width: 30rem;
+    margin-bottom: 0.98rem;
+    margin: 0.98rem auto;
+  }
+  /* tillagt 2023-11-29 slut  */
   .header {
     flex-direction: column;
   }
@@ -6600,5 +6657,37 @@ head,
     line-height: 2em;
     text-align: center;
     cursor: pointer;
+  }
+  /* tillagt 2023-11-28 */
+  img {
+    max-width: 10em;
+  }
+  p,
+  h1,
+  h2,
+  h3 {
+    font-size: 0.8em;
+    line-height: 0.8;
+    width: 32rem;
+    margin-bottom: 0.98rem;
+    margin: 0.98rem auto;
+    color: #333;
+    letter-spacing: 0.9px;
+    /* font-size: 1.4em;
+    line-height: 1.4;
+    width: 64rem;
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
+    color: #333;
+    letter-spacing: 1px;  */
+  }
+  a {
+    font-size: 0.8em;
+    line-height: 0.8;
+    width: 32rem;
+    margin-bottom: 0.98rem;
+    margin: 0.98rem auto;
+    color: #333;
+    letter-spacing: 0.9px;
   }
 }
