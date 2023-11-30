@@ -2,16 +2,21 @@ p,
 h1,
 h2,
 h3 {
-    font-size: 1.4em;
+    @include font-size-and-more;
+    /* font-size: 1.4em;
     line-height: 1.4;
     width: 64rem;
     margin-bottom: 1.96rem;
     margin: 1.96rem auto;
     color: #333;
-    letter-spacing: 1px;
+    letter-spacing: 1px;  */
 }
 p {
     font-family: $main-font;
+}
+
+a {
+    @include font-size-and-more;
 }
 
 h1,
