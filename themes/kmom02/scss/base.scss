@@ -1,6 +1,19 @@
+html { 
+    font-size: 100%;
+}
+.main {
+    width: 64rem;
+}
+
+@media (min-width: 64em) {
+    html {
+        font-size: 112,5%;
+    }   
+}
+
 body {
-    /* background-color: $background-color-body;  */
-    @include background-color;
+    background-color: $background-color-body;
+    /* @include background-color;  */
 }
 
 head,
@@ -22,18 +35,31 @@ head,
 
 .footer {
     background-color: $background-color-footer;
-
-    .social,
-    .social:a,
-    .social:i,
-    .social.a
-    .social.i
-     {
-        background-color: $background-color-footer;
-        float: right;
-    }
+    display: flex;
+    flex-direction: row;
 }
+
+.social-text {
+    display: inherit;
+    max-width: 70%;
+}
+
+.social {
+    display: inherit;
+    border-top: 15em;
+    max-width: 30%;
+}
+
 /* .social,
+.social:a,
+.social:i,
+.social.a
+.social.i {
+    display: inline;
+    background-color: $background-color-footer;
+}
+
+/* .social > row1
 .social:a,
 .social:i,
 .social.i {
