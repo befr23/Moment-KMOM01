@@ -1,3 +1,4 @@
+/* Inkludera normalize.css */
 @import '../../node_modules/normalize.css/normalize';
 
 /* Fonts from https://fonts.google.com/ */
@@ -9,7 +10,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
-/* Ikoner och fonter - slut  */
+/* Ikoner och fonter, från Font Awesome - slut  */
 
 @import 'variables';
 
@@ -22,3 +23,4 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'blockquotes';
 @import 'code';
+@import 'code_mobile';
