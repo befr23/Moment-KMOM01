@@ -18,9 +18,13 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'typography';
 
-
 @import 'base';
+
+@import 'header';
+@import 'main';
+@import 'footer';
 
 @import 'blockquotes';
 @import 'code';
-@import 'code_mobile';
+@import 'tablet-menu';
+@import 'mobile-menu';
