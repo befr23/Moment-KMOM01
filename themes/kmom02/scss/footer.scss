@@ -1,0 +1,51 @@
+
+.footer {
+    /* width: 64rem;    ändrat 2023-12-06 */
+    /* width: $max-width;   2023-12-06 */
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
+}
+
+.footer {
+    background-color: $background-color-footer;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-text {
+    display: inherit;
+    max-width: 70%;
+}
+
+.social {
+    display: inherit;
+    border-top: 15em;
+    max-width: 30%;
+}
+
+/* .social,
+.social:a,
+.social:i,
+.social.a
+.social.i {
+    display: inline;
+    background-color: $background-color-footer;
+}
+
+/* .social > row1
+.social:a,
+.social:i,
+.social.i {
+    background-color: inherit;
+    float: right;
+}   */
+
+/* .social {
+    background-color: inherit;
+    a {
+        float: right;
+    }
+    i {
+        float: right;
+    }
+}  */
