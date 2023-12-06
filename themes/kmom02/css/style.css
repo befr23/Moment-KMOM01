@@ -6459,38 +6459,25 @@ readers do not read off random characters that represent icons */
   letter-spacing: -9px;
 }
 
+a,
 p,
 h1,
 h2,
 h3 {
-  font-size: 1.4em;
+  /* font-size: 1.4em;  ändrat 2023-12-06 */
   line-height: 1.4;
+  /* width: 64rem;  ändrat 2023-12-06 */
   width: 64rem;
   margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
+  /* margin: 1.96rem auto; ändr 2023-12-06 kl 19:00 */
+  /* margin: 0.02rem auto; ändr 2023-12-06 kl 20:05 start osv
   color: #333;
-  letter-spacing: 1px;
-  /* font-size: 1.4em;
-  line-height: 1.4;
-  width: 64rem;
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
-  color: #333;
-  letter-spacing: 1px;  */
+  letter-spacing: 1px;    slut här*/
 }
 
 p {
   font-family: "Roboto", sans-serif;
-}
-
-a {
-  font-size: 1.4em;
-  line-height: 1.4;
-  width: 64rem;
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
-  color: #333;
-  letter-spacing: 1px;
+  color: #333 #00008b; /* nytt 2023-12-06 19:57 */
 }
 
 h1,
@@ -6499,43 +6486,98 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+table,
+td,
+th,
+tr {
+  border: 1px solid;
+}
+
 html {
-  font-size: 100%;
+  /* font-size: 100%;  ändrat 2023-12-06 */
+  font-size: 1.2em;
 }
 
-.main {
-  width: 64rem;
-}
-
-@media (min-width: 64em) {
-  html {
-    font-size: 112, 5%;
-  }
-}
+/*  ändrat 2023-12-06  @media (min-width: 70em) {
+    /* ändrat 2023-12-06 start
+@media (min-width: 64em) {   slut här
+    html {  
+        font-size: 112,5%;
+    }   
+}  */
 body {
   background-color: #DDA0DD;
   /* @include background-color;  */
+  width: 64rem; /* tillagt 2023-12-06 */
+  margin-bottom: 0.98rem;
+  margin: 0.98rem auto;
 }
 
-head,
-.header,
-.main,
-.footer {
-  width: 64rem;
+/* @include font-size-and-more;   */
+/* för class=header */
+.header {
+  /* width: 64rem;   ändrat 2023-12-06 */
+  /* width: $max-width;  ändrat 2023-12-06 */
   margin-bottom: 1.96rem;
   margin: 1.96rem auto;
 }
 
 .header {
-  background-color: #00FFFF;
+  background-color: #0FF;
 }
 
+/* för class=nav */
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 0 1em;
+}
+
+.nav a, .nav-toggle {
+  color: #333;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+img {
+  max-width: 50%;
+  display: block;
+  /* max-width: 30em;   ändrat 2023-12-03  */
+}
+
+/* Bengt Tillagt 2023-11-20 start */
+.logo img {
+  padding: 1em 1em 1em 0;
+  margin-left: 0.1em;
+  min-width: min-content;
+  /* max-width: 0.2em;  2023-12-06 kl 18:36 */
+}
+
+/* Bengt Tillagt 2023-11-20 slut */
 .main {
+  /* width: 64rem;  ändrat 2023-12-06 */
+  /* width: $max-width;  ändrat 2023-12-06  */
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
   background-color: #fff;
 }
 
 .footer {
-  background-color: #00ffff;
+  /* width: 64rem;    ändrat 2023-12-06 */
+  /* width: $max-width;   2023-12-06 */
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
+}
+
+.footer {
+  background-color: #0ff;
   display: flex;
   flex-direction: row;
 }
@@ -6582,47 +6624,19 @@ head,
   transition: height 0.5s ease-in !important;
 }
 
-.nav ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  list-style: none;
-}
-
-.nav ul li {
-  padding: 0 1em;
-}
-
-.nav a, .nav-toggle {
-  color: #333;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-img {
-  max-width: 30em;
-}
-
-/* Bengt Tillagt 2023-11-20 start */
-.logo {
-  padding: 1em 1em 1em 0;
-  margin-left: 0.1em;
-  max-width: 0.2em;
-}
-
-/* Bengt Tillagt 2023-11-20 slut */
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
-@media (max-width: 920px) {
+@media (max-width: 1450px) {
   /* tillagt 2023-11-29 start */
   head,
+  .body,
   .header,
   .main,
   .footer {
-    width: 30rem;
+    /* width: 50rem;   ändrat 2023-12-06 */
+    width: 40rem;
     margin-bottom: 0.98rem;
-    margin: 0.98rem auto;
+    /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
+    margin: 0.02rem;
   }
   /* tillagt 2023-11-29 slut  */
   .header {
@@ -6642,7 +6656,73 @@ img {
   .nav ul li {
     display: flex;
     flex-direction: column;
+    /* text-align: center;  ändr 2023-12-06 kl 18:53 */
+    text-align: left;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2.2em;
+    /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
+    margin: 0.25em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
     text-align: center;
+    cursor: pointer;
+  }
+  /* tillagt 2023-11-28 */
+  img {
+    max-width: 80%;
+    display: block;
+    /* max-width: 10em;  ändrat 2023-12-03 */
+  }
+  a,
+  p,
+  h1,
+  h2,
+  h3 {
+    font-size: 1em;
+    line-height: 0.9;
+    width: 40rem;
+    /* margin-bottom: 1rem;  ändrat 2023-12-06 kl 20:04
+    margin: 1rem auto;
+    color: #333;
+    letter-spacing: 1px;  */
+  }
+}
+@media (max-width: 767px) {
+  head,
+  .body,
+  .header,
+  .main,
+  .footer {
+    /* width: 30rem;  ändrat 2023-12-06 */
+    width: 15rem;
+    margin-bottom: 0.98rem;
+    /* margin: 0.98rem auto;  ändr 2023-12-06 kl 19:18 */
+    margin: 0;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 1em 1em 1em 0;
+    margin-left: 0.1em;
+    max-width: 0.1em;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .nav ul li {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center;  ändr 2023-12-06 kl 18:53 */
+    text-align: left;
   }
   .nav ul li a {
     display: block;
@@ -6652,42 +6732,25 @@ img {
     display: block;
     float: right;
     width: 2em;
-    margin: 0.6667em 0;
+    /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
+    margin: 0.05em 0;
     font-size: 1.5rem;
     line-height: 2em;
     text-align: center;
     cursor: pointer;
   }
-  /* tillagt 2023-11-28 */
   img {
-    max-width: 10em;
+    max-width: 60%;
+    display: block;
+    /* max-width: 10em;  ändrat 2023-12-03 */
   }
+  a,
   p,
   h1,
   h2,
   h3 {
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 0.8;
-    width: 32rem;
-    margin-bottom: 0.98rem;
-    margin: 0.98rem auto;
-    color: #333;
-    letter-spacing: 0.9px;
-    /* font-size: 1.4em;
-    line-height: 1.4;
-    width: 64rem;
-    margin-bottom: 1.96rem;
-    margin: 1.96rem auto;
-    color: #333;
-    letter-spacing: 1px;  */
-  }
-  a {
-    font-size: 0.8em;
-    line-height: 0.8;
-    width: 32rem;
-    margin-bottom: 0.98rem;
-    margin: 0.98rem auto;
-    color: #333;
-    letter-spacing: 0.9px;
+    width: 15rem;
   }
 }
