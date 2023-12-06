@@ -1,32 +1,26 @@
 
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
 @media (max-width: 1450px) {
-
-    /* tillagt 2023-11-29 start */
     head,
     .body, /* tillagt 2023-12-06 kl 19:20 */
     .header,
     .main,
     .footer {
-        /* width: 50rem;   ändrat 2023-12-06 */
         width: $max-width-tablet;
         margin-bottom: 0.98rem;
         /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
         margin: 0.02rem;
     }
-    /* tillagt 2023-11-29 slut  */
 
     .header {
         flex-direction: column;
     }
 
-    /* Bengt Tillagt 2023-11-20 start */
     .logo {
         padding: 1em 1em 1em 0;
         margin-left: 0.1em;
         max-width: 0.2em;
     }
-    /* Bengt Tillagt 2023-11-20 slut */
 
     .nav ul {
         flex-direction: column;
@@ -36,8 +30,7 @@
     .nav ul li {
         display: flex;
         flex-direction: column;
-         /* text-align: center;  ändr 2023-12-06 kl 18:53 */
-         text-align: left;
+        text-align: left;
     }
 
     .nav ul li a {
