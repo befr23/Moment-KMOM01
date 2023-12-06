@@ -1,0 +1,47 @@
+/* för class=header */
+.header {
+    /* width: 64rem;   ändrat 2023-12-06 */
+    /* width: $max-width;  ändrat 2023-12-06 */
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
+}
+
+.header {
+    background-color: $background-color-header;
+}
+
+/* för class=nav */
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 0 1em;
+}
+
+.nav a, .nav-toggle {
+    color: #333;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+    /* max-width: 30em;   ändrat 2023-12-03  */
+}
+
+/* Bengt Tillagt 2023-11-20 start */
+.logo img {
+    padding: 1em 1em 1em 0;
+    margin-left: 0.1em;
+    min-width: min-content;
+    /* max-width: 0.2em;  2023-12-06 kl 18:36 */
+}
+/* Bengt Tillagt 2023-11-20 slut */
+
