@@ -5,28 +5,40 @@ $font-color: #333;
 $font-alternative-color: #00008b;
 $accent-color: #ee6c4d;
 
+$max-width: 64rem;
+$max-width-tablet: 40rem;
+$max-width-mobile: 15rem;
+
 @mixin font-size-and-more() {
-    font-size: 1.4em;
+    /* font-size: 1.4em;  ändrat 2023-12-06 */
     line-height: 1.4;
-    width: 64rem;
+    /* width: 64rem;  ändrat 2023-12-06 */
+    width: $max-width;
     margin-bottom: 1.96rem;
-    margin: 1.96rem auto;
+    /* margin: 1.96rem auto; ändr 2023-12-06 kl 19:00 */
+    /* margin: 0.02rem auto; ändr 2023-12-06 kl 20:05 start osv
     color: #333;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;    slut här*/
+}
+
+@mixin font-size-and-more-tablet() {
+    font-size: 1em;
+    line-height: 0.9;
+    width: $max-width-tablet;
+    /* margin-bottom: 1rem;  ändrat 2023-12-06 kl 20:04
+    margin: 1rem auto;
+    color: #333;
+    letter-spacing: 1px;  */
 }
 
 @mixin font-size-and-more-mobile() {
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 0.8;
-    width: 32rem;
-    margin-bottom: 0.98rem;
-    margin: 0.98rem auto;
-    color: #333;
-    letter-spacing: 0.9px;  
+    width: $max-width-mobile;
 }
 
 $background-color-body: #DDA0DD;
 $background-alternative-color: #5f9ea0;
-$background-color-header: #00FFFF;
+$background-color-header: #0FF;
 $background-color-main: #fff;
-$background-color-footer: #00ffff;
+$background-color-footer: #0ff;
