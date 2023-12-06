@@ -6427,6 +6427,14 @@ readers do not read off random characters that represent icons */
 }
 
 /* Ikoner och fonter, från Font Awesome - slut  */
+.typsnitt-rubrik {
+  font-family: "Merriweather", serif;
+}
+
+.typsnitt-text {
+  font-family: "Roboto", sans-serif;
+}
+
 .old-fashioned {
   font-family: "Meriweater", serif;
   font-size: 1.4em;
@@ -6455,7 +6463,7 @@ readers do not read off random characters that represent icons */
   width: 64rem;
   margin-bottom: 1.96rem;
   margin: 1.96rem auto;
-  color: greenyellow;
+  color: #ff1493;
   letter-spacing: -9px;
 }
 
@@ -6513,7 +6521,6 @@ body {
   margin: 0.98rem auto;
 }
 
-/* @include font-size-and-more;   */
 /* för class=header */
 .header {
   /* width: 64rem;   ändrat 2023-12-06 */
@@ -6626,29 +6633,24 @@ img {
 
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
 @media (max-width: 1450px) {
-  /* tillagt 2023-11-29 start */
   head,
   .body,
   .header,
   .main,
   .footer {
-    /* width: 50rem;   ändrat 2023-12-06 */
     width: 40rem;
     margin-bottom: 0.98rem;
     /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
     margin: 0.02rem;
   }
-  /* tillagt 2023-11-29 slut  */
   .header {
     flex-direction: column;
   }
-  /* Bengt Tillagt 2023-11-20 start */
   .logo {
     padding: 1em 1em 1em 0;
     margin-left: 0.1em;
     max-width: 0.2em;
   }
-  /* Bengt Tillagt 2023-11-20 slut */
   .nav ul {
     flex-direction: column;
     padding-bottom: 1em;
@@ -6656,7 +6658,6 @@ img {
   .nav ul li {
     display: flex;
     flex-direction: column;
-    /* text-align: center;  ändr 2023-12-06 kl 18:53 */
     text-align: left;
   }
   .nav ul li a {
