@@ -1,0 +1,74 @@
+
+/* @media (max-width: 767px) {   ändrat 2023-11-26 */
+@media (max-width: 1450px) {
+
+    /* tillagt 2023-11-29 start */
+    head,
+    .body, /* tillagt 2023-12-06 kl 19:20 */
+    .header,
+    .main,
+    .footer {
+        /* width: 50rem;   ändrat 2023-12-06 */
+        width: $max-width-tablet;
+        margin-bottom: 0.98rem;
+        /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
+        margin: 0.02rem;
+    }
+    /* tillagt 2023-11-29 slut  */
+
+    .header {
+        flex-direction: column;
+    }
+
+    /* Bengt Tillagt 2023-11-20 start */
+    .logo {
+        padding: 1em 1em 1em 0;
+        margin-left: 0.1em;
+        max-width: 0.2em;
+    }
+    /* Bengt Tillagt 2023-11-20 slut */
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+         /* text-align: center;  ändr 2023-12-06 kl 18:53 */
+         text-align: left;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 2.2em;
+        /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
+        margin: 0.25em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    /* tillagt 2023-11-28 */
+    img {
+        max-width: 80%;
+        display: block;
+        /* max-width: 10em;  ändrat 2023-12-03 */
+    }
+
+    a,
+    p,
+    h1,
+    h2,
+    h3 {
+        @include font-size-and-more-tablet;
+    }
+
+}
