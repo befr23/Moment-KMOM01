@@ -1,20 +1,7 @@
-html { 
-    /* font-size: 100%;  ändrat 2023-12-06 */
-    font-size: 1.2em;
-}
-
-/*  ändrat 2023-12-06  @media (min-width: 70em) {
-    /* ändrat 2023-12-06 start
-@media (min-width: 64em) {   slut här
-    html {  
-        font-size: 112,5%;
-    }   
-}  */
-
 body {
     background-color: $background-color-body;
     /* @include background-color;  */
-    width: $max-width;   /* tillagt 2023-12-06 */
+    width: $max-width;
     margin-bottom: 0.98rem;
     margin: 0.98rem auto;
 }
