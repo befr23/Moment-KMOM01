@@ -1,10 +1,9 @@
 @media (max-width: 767px) {
     head,
-    .body, /* tillagt 2023-12-06 kl 19:09 */
+    .body,
     .header,
     .main,
     .footer {
-        /* width: 30rem;  ändrat 2023-12-06 */
         width: $max-width-mobile;
         margin-bottom: 0.98rem;
         /* margin: 0.98rem auto;  ändr 2023-12-06 kl 19:18 */
@@ -29,7 +28,6 @@
     .nav ul li {
         display: flex;
         flex-direction: column;
-        /* text-align: center;  ändr 2023-12-06 kl 18:53 */
         text-align: left;
     }
 
@@ -42,7 +40,6 @@
         display: block;
         float: right;
         width: 2em;
-        /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
         margin: 0.05em 0;
         font-size: 1.5rem;
         line-height: 2em;
@@ -53,7 +50,6 @@
     img {
         max-width: 60%;
         display: block;
-        /* max-width: 10em;  ändrat 2023-12-03 */
     }
 
     a,
