@@ -5,30 +5,21 @@ $font-color: #333;
 $font-alternative-color: #00008b;
 $accent-color: #ee6c4d;
 
-$max-width: 64rem;
+$max-width: 75rem;
 $max-width-tablet: 40rem;
 $max-width-mobile: 15rem;
 
 @mixin font-size-and-more() {
-    /* font-size: 1.4em;  ändrat 2023-12-06 */
+    font-size: 1.4em;
     line-height: 1.4;
-    /* width: 64rem;  ändrat 2023-12-06 */
     width: $max-width;
     margin-bottom: 1.96rem;
-    /* margin: 1.96rem auto; ändr 2023-12-06 kl 19:00 */
-    /* margin: 0.02rem auto; ändr 2023-12-06 kl 20:05 start osv
-    color: #333;
-    letter-spacing: 1px;    slut här*/
 }
 
 @mixin font-size-and-more-tablet() {
     font-size: 1em;
     line-height: 0.9;
     width: $max-width-tablet;
-    /* margin-bottom: 1rem;  ändrat 2023-12-06 kl 20:04
-    margin: 1rem auto;
-    color: #333;
-    letter-spacing: 1px;  */
 }
 
 @mixin font-size-and-more-mobile() {
