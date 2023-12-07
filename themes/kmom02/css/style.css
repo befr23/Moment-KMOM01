@@ -6539,7 +6539,7 @@ body {
 
 /* Röd textfärg då sidan är aktiv */
 .active a {
-  color: #FF0000;
+  color: #F00;
 }
 
 .nav-toggle {
