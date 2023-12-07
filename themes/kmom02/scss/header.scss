@@ -2,6 +2,7 @@
 .header {
     /* width: 64rem;   ändrat 2023-12-06 */
     /* width: $max-width;  ändrat 2023-12-06 */
+    max-width: 1700px;   /* 2023-12-07 ??????? */
     margin-bottom: 1.96rem;
     margin: 1.96rem auto;
 }
@@ -26,8 +27,9 @@
     color: #333;
 }
 
-.active {
-    background-color: #ffe4;
+/* Röd textfärg då sidan är aktiv */
+.active a {
+    color: #FF0000;
 }
 
 .nav-toggle {
@@ -37,15 +39,10 @@
 img {
     max-width: 50%;
     display: block;
-    /* max-width: 30em;   ändrat 2023-12-03  */
 }
 
-/* Bengt Tillagt 2023-11-20 start */
 .logo img {
     padding: 1em 1em 1em 0;
     margin-left: 0.1em;
     min-width: min-content;
-    /* max-width: 0.2em;  2023-12-06 kl 18:36 */
 }
-/* Bengt Tillagt 2023-11-20 slut */
-
