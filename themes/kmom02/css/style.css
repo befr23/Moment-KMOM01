@@ -6472,20 +6472,19 @@ p,
 h1,
 h2,
 h3 {
-  /* font-size: 1.4em;  ändrat 2023-12-06 */
+  font-size: 1.4em;
   line-height: 1.4;
-  /* width: 64rem;  ändrat 2023-12-06 */
-  width: 64rem;
+  width: 75rem;
   margin-bottom: 1.96rem;
-  /* margin: 1.96rem auto; ändr 2023-12-06 kl 19:00 */
-  /* margin: 0.02rem auto; ändr 2023-12-06 kl 20:05 start osv
-  color: #333;
-  letter-spacing: 1px;    slut här*/
+}
+
+a:hover {
+  background-color: #DC143C;
 }
 
 p {
   font-family: "Roboto", sans-serif;
-  color: #333 #00008b; /* nytt 2023-12-06 19:57 */
+  color: #333 #00008b;
 }
 
 h1,
@@ -6501,22 +6500,10 @@ tr {
   border: 1px solid;
 }
 
-html {
-  /* font-size: 100%;  ändrat 2023-12-06 */
-  font-size: 1.2em;
-}
-
-/*  ändrat 2023-12-06  @media (min-width: 70em) {
-    /* ändrat 2023-12-06 start
-@media (min-width: 64em) {   slut här
-    html {  
-        font-size: 112,5%;
-    }   
-}  */
 body {
   background-color: #DDA0DD;
   /* @include background-color;  */
-  width: 64rem; /* tillagt 2023-12-06 */
+  width: 75rem;
   margin-bottom: 0.98rem;
   margin: 0.98rem auto;
 }
@@ -6525,6 +6512,7 @@ body {
 .header {
   /* width: 64rem;   ändrat 2023-12-06 */
   /* width: $max-width;  ändrat 2023-12-06 */
+  max-width: 1700px; /* 2023-12-07 ??????? */
   margin-bottom: 1.96rem;
   margin: 1.96rem auto;
 }
@@ -6549,6 +6537,11 @@ body {
   color: #333;
 }
 
+/* Röd textfärg då sidan är aktiv */
+.active a {
+  color: #FF0000;
+}
+
 .nav-toggle {
   display: none;
 }
@@ -6556,37 +6549,30 @@ body {
 img {
   max-width: 50%;
   display: block;
-  /* max-width: 30em;   ändrat 2023-12-03  */
 }
 
-/* Bengt Tillagt 2023-11-20 start */
 .logo img {
   padding: 1em 1em 1em 0;
   margin-left: 0.1em;
   min-width: min-content;
-  /* max-width: 0.2em;  2023-12-06 kl 18:36 */
 }
 
-/* Bengt Tillagt 2023-11-20 slut */
 .main {
-  /* width: 64rem;  ändrat 2023-12-06 */
-  /* width: $max-width;  ändrat 2023-12-06  */
   margin-bottom: 1.96rem;
   margin: 1.96rem auto;
   background-color: #fff;
 }
 
-.footer {
-  /* width: 64rem;    ändrat 2023-12-06 */
-  /* width: $max-width;   2023-12-06 */
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
-}
-
+/* .footer {
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
+}  */
 .footer {
   background-color: #0ff;
   display: flex;
   flex-direction: row;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
 }
 
 .social-text {
@@ -6600,32 +6586,6 @@ img {
   max-width: 30%;
 }
 
-/* .social,
-.social:a,
-.social:i,
-.social.a
-.social.i {
-    display: inline;
-    background-color: $background-color-footer;
-}
-
-/* .social > row1
-.social:a,
-.social:i,
-.social.i {
-    background-color: inherit;
-    float: right;
-}   */
-/* .social {
-    background-color: inherit;
-    a {
-        float: right;
-    }
-    i {
-        float: right;
-    }
-}  */
-/* 2023-11-27 allt detta tillagt här i code.scss: */
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
@@ -6668,18 +6628,15 @@ img {
     display: block;
     float: right;
     width: 2.2em;
-    /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
     margin: 0.25em 0;
     font-size: 1.5rem;
     line-height: 2em;
     text-align: center;
     cursor: pointer;
   }
-  /* tillagt 2023-11-28 */
   img {
     max-width: 80%;
     display: block;
-    /* max-width: 10em;  ändrat 2023-12-03 */
   }
   a,
   p,
@@ -6689,10 +6646,6 @@ img {
     font-size: 1em;
     line-height: 0.9;
     width: 40rem;
-    /* margin-bottom: 1rem;  ändrat 2023-12-06 kl 20:04
-    margin: 1rem auto;
-    color: #333;
-    letter-spacing: 1px;  */
   }
 }
 @media (max-width: 767px) {
@@ -6701,7 +6654,6 @@ img {
   .header,
   .main,
   .footer {
-    /* width: 30rem;  ändrat 2023-12-06 */
     width: 15rem;
     margin-bottom: 0.98rem;
     /* margin: 0.98rem auto;  ändr 2023-12-06 kl 19:18 */
@@ -6722,7 +6674,6 @@ img {
   .nav ul li {
     display: flex;
     flex-direction: column;
-    /* text-align: center;  ändr 2023-12-06 kl 18:53 */
     text-align: left;
   }
   .nav ul li a {
@@ -6733,7 +6684,6 @@ img {
     display: block;
     float: right;
     width: 2em;
-    /* margin: 0.6667em 0;  ändrat 2023-12-06 kl 16:07 */
     margin: 0.05em 0;
     font-size: 1.5rem;
     line-height: 2em;
@@ -6743,7 +6693,6 @@ img {
   img {
     max-width: 60%;
     display: block;
-    /* max-width: 10em;  ändrat 2023-12-03 */
   }
   a,
   p,
