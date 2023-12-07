@@ -1,15 +1,14 @@
-
-.footer {
-    /* width: 64rem;    ändrat 2023-12-06 */
-    /* width: $max-width;   2023-12-06 */
+/* .footer {
     margin-bottom: 1.96rem;
     margin: 1.96rem auto;
-}
+}  */
 
 .footer {
     background-color: $background-color-footer;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.96rem;
+    margin: 1.96rem auto;
 }
 
 .social-text {
