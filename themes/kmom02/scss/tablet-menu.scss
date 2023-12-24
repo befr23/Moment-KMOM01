@@ -1,15 +1,17 @@
 
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
-@media (max-width: 1450px) {
+/* @media (max-width: 1200px) {  ändrat 2024-12-24 kl 00:05 */
+@media (max-width: $max-width-tablet) {    
     head,
-    .body, /* tillagt 2023-12-06 kl 19:20 */
+    .body, /* tillagt 2023-12-23 */
     .header,
     .main,
     .footer {
-        width: $max-width-tablet;
+        width: 98%;  /* tillagt 2023-12-23 */
+        /* width: $max-width-tablet;  2023-12-09 kl 17:00 */
         margin-bottom: 0.98rem;
-        /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
-        margin: 0.02rem;
+        margin: 0.98rem auto; /* tillagt/ändrat 2023-12-23 kl 14:30 */
+        /* margin: 0.02rem;  kommentar 2023-12-23 kl 14:28 */
     }
 
     .header {
