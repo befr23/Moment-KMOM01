@@ -1,0 +1,50 @@
+.landingpage {
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.box {
+    display: grid;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.span1 {
+    grid-column: span 1;
+    /* border: 1px solid #ccc;
+    padding: 1rem;  */
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.span3 {
+    grid-column: span 2;
+}
+
+.span4 {
+    grid-column: span 1;
+}
+
+.span5 {
+    grid-column: span 3;
+}
+
+.span6 {
+    grid-column: span 1;
+}
+
+.span7 {
+    grid-column: span 2;
+}
