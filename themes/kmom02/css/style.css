@@ -6427,6 +6427,12 @@ readers do not read off random characters that represent icons */
 }
 
 /* Ikoner och fonter, från Font Awesome - slut  */
+/* $max-width: 75rem;  2023-12-09  eller 64rem ?*/
+/* 2023-12-18 från 75rem*/
+/* $max-width-tablet: 50rem;  2023-12-23 */
+/* $max-width-tablet: 1200px;  /* ändrat 2023-12-24 kl 00:03 */
+/* ändrat 2023-12-24 kl 00:03 fr 1100 till 960 kl 00:48 */
+/* $max-width-mobile: 15rem;  2023-12-23 ändrat */
 .typsnitt-rubrik {
   font-family: "Merriweather", serif;
 }
@@ -6474,7 +6480,7 @@ h2,
 h3 {
   font-size: 1.4em;
   line-height: 1.4;
-  width: 75rem;
+  /* width: $max-width;  2023-12-09 */
   margin-bottom: 1.96rem;
 }
 
@@ -6503,24 +6509,33 @@ tr {
 body {
   background-color: #DDA0DD;
   /* @include background-color;  */
-  width: 75rem;
-  margin-bottom: 0.98rem;
-  margin: 0.98rem auto;
+  /* width: $max-width;   kommentarmärkt  2023-12-08 start */
+  margin-bottom: 0.98rem; /* tillagt 2023-12-23 */
+  margin: 0.98rem auto; /* tillagt 2023-12-23 */
+  width: 98%; /* tillagt 2023-12-23 */
 }
 
+/* .main {   2023-12-23 kl 14:22 */
+/* width: $max-width;  /* Samma som Emils dvs 64em, kommentarmärkt 2023-12-23 */
+/* margin: 0 auto;  start 2023-12-23 kl 14:22
+}  slut */
 /* för class=header */
-.header {
-  /* width: 64rem;   ändrat 2023-12-06 */
-  /* width: $max-width;  ändrat 2023-12-06 */
-  max-width: 1700px; /* 2023-12-07 ??????? */
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
-}
-
+/* .header {
+    /* max-width: $max-width;  /* 2023-12-23 */
+/* max-width: 98%; kommentar 2023-12-24 kl 00:46 */
+/* margin-bottom: 1.96rem;  kommentar 2023-12-23 start
+    margin: 1.96rem auto;  slut 2023-12-23
+}  */
 .header {
   background-color: #0FF;
+  max-width: 98%;
+  display: flex; /* tillagt 2023-12-23 kl 23:56 */
+  flex-direction: row; /* tillagt 2023-12-23 kl 23:56 */
+  justify-content: space-between; /* tillagt 2023-12-23 kl 23:56 */
 }
 
+/* .site-header {
+}   */
 /* för class=nav */
 .nav ul {
   display: flex;
@@ -6558,21 +6573,20 @@ img {
 }
 
 .main {
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
+  /* margin-bottom: 1.96rem; kommentar start 2023-12-23 
+  margin: 1.96rem auto;   slut 2023-12-23 */
   background-color: #fff;
+  max-width: 98%; /* tillagt 2023-12-23 */
 }
 
-/* .footer {
-    margin-bottom: 1.96rem;
-    margin: 1.96rem auto;
-}  */
 .footer {
   background-color: #0ff;
   display: flex;
   flex-direction: row;
-  margin-bottom: 1.96rem;
-  margin: 1.96rem auto;
+  /* max-width: $max-width;   ändrat 2023-12-23 */
+  max-width: 98%; /* tillagt 2023-12-23 */
+  /* margin-bottom: 1.96rem; kommentar start 2023-12-23 
+  margin: 1.96rem auto; slut 2023-12-23 */
 }
 
 .social-text {
@@ -6581,9 +6595,17 @@ img {
 }
 
 .social {
-  display: inherit;
+  /* display: inherit;  2023-12-09 */
+  display: flex;
+  flex-direction: row; /* ny 2023-12-09 */
+  justify-content: flex-end; /* ny 2023-12-09 */
   border-top: 15em;
-  max-width: 30%;
+  max-width: 25%;
+}
+
+.sr-only {
+  border: 1px solid #ccc;
+  padding: 1rem;
 }
 
 .slide {
@@ -6591,17 +6613,176 @@ img {
   transition: height 0.5s ease-in !important;
 }
 
+.landingpage {
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.box {
+  display: grid;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.span1 {
+  grid-column: span 1;
+  /* border: 1px solid #ccc;
+  padding: 1rem;  */
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 2;
+}
+
+.span4 {
+  grid-column: span 1;
+}
+
+.span5 {
+  grid-column: span 3;
+}
+
+.span6 {
+  grid-column: span 1;
+}
+
+.span7 {
+  grid-column: span 2;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-tech {
+  background-color: greenyellow;
+  padding: 1em;
+}
+
+.content-text {
+  background-color: mediumaquamarine;
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+}
+
+.wrapper {
+  /* max-width: 960px;  2023-12-18  */
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 600px 200px;
+  border: 4px solid #111;
+  padding: 1rem;
+}
+
+.header-grid {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  border: 3px dotted #444;
+  padding: 1rem;
+}
+
+.main-grid {
+  grid-column: 2/2;
+  grid-row: 2/3;
+  grid-template-areas: "top-left top-right" "bottom bottom";
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  border: 2px double #555;
+  padding: 1rem;
+}
+
+.side-bar {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border: 2px solid #333;
+  padding: 1rem;
+}
+
+.footer-grid {
+  grid-column: 1/3;
+  grid-row: 3/3;
+  border: 1px solid #777;
+  padding: 1rem;
+}
+
+.bottom {
+  grid-area: bottom;
+  border: 4px solid #f012BE;
+  padding: 1rem;
+}
+
+.top-left {
+  grid-area: top-left;
+  border: 2px solid #2ECC40;
+  padding: 1rem;
+}
+
+.top-right {
+  grid-area: top-right;
+  border: 2px solid #0074D9;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-grid {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "top-left" "top-right" "bottom";
+  }
+}
+.container-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.div1 {
+  background-color: purple;
+  color: red;
+}
+
+.div2 {
+  background-color: blue;
+  color: yellow;
+}
+
+.div3 {
+  background-color: green;
+  color: whitesmoke;
+}
+
 /* @media (max-width: 767px) {   ändrat 2023-11-26 */
-@media (max-width: 1450px) {
+/* @media (max-width: 1200px) {  ändrat 2024-12-24 kl 00:05 */
+@media (max-width: 960px) {
   head,
   .body,
   .header,
   .main,
   .footer {
-    width: 40rem;
+    width: 98%; /* tillagt 2023-12-23 */
+    /* width: $max-width-tablet;  2023-12-09 kl 17:00 */
     margin-bottom: 0.98rem;
-    /* margin: 0.98rem auto; ändr 2023-12-06 kl 19:21 */
-    margin: 0.02rem;
+    margin: 0.98rem auto; /* tillagt/ändrat 2023-12-23 kl 14:30 */
+    /* margin: 0.02rem;  kommentar 2023-12-23 kl 14:28 */
   }
   .header {
     flex-direction: column;
@@ -6645,19 +6826,20 @@ img {
   h3 {
     font-size: 1em;
     line-height: 0.9;
-    width: 40rem;
+    margin-bottom: auto; /* tillagt 2023-12-24 kl 00:58  */
   }
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {   ändrat 2023-12-23 */
+@media (max-width: 320px) {
   head,
   .body,
   .header,
   .main,
   .footer {
-    width: 15rem;
-    margin-bottom: 0.98rem;
-    /* margin: 0.98rem auto;  ändr 2023-12-06 kl 19:18 */
-    margin: 0;
+    /* width: $max-width-mobile;  ändr 2023-12-23 */
+    width: 98%;
+    /* margin-bottom: 0.98rem;  ändr 2023-12-23 */
+    margin: 0 auto; /* ändr 2023-12-23 */
   }
   .header {
     flex-direction: column;
@@ -6699,8 +6881,20 @@ img {
   h1,
   h2,
   h3 {
-    font-size: 0.7em;
-    line-height: 0.8;
-    width: 15rem;
+    /* font-size: 0.7em;  ändr 2023-12-23 */
+    font-size: 0.9em;
+    line-height: 0.9;
+    margin-bottom: auto; /* tillagt 2023-12-24 kl 00:58  */
+  }
+  /* Change the technology.scss for mobile */
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+  .span2, .span3, .span5, .span7 {
+    grid-column: span 1;
+  }
+  /* Change the technologies.scss for mobile */
+  .container-flex {
+    flex-direction: column;
   }
 }
