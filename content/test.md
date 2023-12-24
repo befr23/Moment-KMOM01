@@ -1,5 +1,5 @@
 ---
-Title: Test av saker
+Title: Test
 Description: Page test
 ---
 
