@@ -5,32 +5,26 @@ $font-color: #333;
 $font-alternative-color: #00008b;
 $accent-color: #ee6c4d;
 
-/* $max-width: 75rem;  2023-12-09  eller 64rem ?*/
-$max-width: 80rem;  /* 2023-12-18 från 75rem*/
-/* $max-width-tablet: 50rem;  2023-12-23 */
-/* $max-width-tablet: 1200px;  /* ändrat 2023-12-24 kl 00:03 */
-$max-width-tablet: 960px;  /* ändrat 2023-12-24 kl 00:03 fr 1100 till 960 kl 00:48 */
-/* $max-width-mobile: 15rem;  2023-12-23 ändrat */
+$max-width: 1500px;
+$max-width-tablet: 960px;
 $max-width-mobile: 320px;
 
 @mixin font-size-and-more() {
     font-size: 1.4em;
     line-height: 1.4;
-    /* width: $max-width;  2023-12-09 */
     margin-bottom: 1.96rem;
 }
 
 @mixin font-size-and-more-tablet() {
     font-size: 1em;
     line-height: 0.9;
-    margin-bottom: auto;  /* tillagt 2023-12-24 kl 00:58  */
+    margin-bottom: auto;
 }
 
 @mixin font-size-and-more-mobile() {
-    /* font-size: 0.7em;  ändr 2023-12-23 */
     font-size: 0.9em;
     line-height: 0.9;
-    margin-bottom: auto;  /* tillagt 2023-12-24 kl 00:58  */
+    margin-bottom: auto;
 }
 
 $background-color-body: #DDA0DD;
