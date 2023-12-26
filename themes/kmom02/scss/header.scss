@@ -1,21 +1,11 @@
 /* för class=header */
-/* .header {
-    /* max-width: $max-width;  /* 2023-12-23 */
-    /* max-width: 98%; kommentar 2023-12-24 kl 00:46 */
-    /* margin-bottom: 1.96rem;  kommentar 2023-12-23 start
-    margin: 1.96rem auto;  slut 2023-12-23
-}  */
-
 .header {
     background-color: $background-color-header;
     max-width: 98%;
-    display: flex;  /* tillagt 2023-12-23 kl 23:56 */
-    flex-direction: row;  /* tillagt 2023-12-23 kl 23:56 */
-    justify-content: space-between;   /* tillagt 2023-12-23 kl 23:56 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-/* .site-header {
-}   */
 
 /* för class=nav */
 .nav ul {
