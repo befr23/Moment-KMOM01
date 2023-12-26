@@ -6427,12 +6427,6 @@ readers do not read off random characters that represent icons */
 }
 
 /* Ikoner och fonter, från Font Awesome - slut  */
-/* $max-width: 75rem;  2023-12-09  eller 64rem ?*/
-/* 2023-12-18 från 75rem*/
-/* $max-width-tablet: 50rem;  2023-12-23 */
-/* $max-width-tablet: 1200px;  /* ändrat 2023-12-24 kl 00:03 */
-/* ändrat 2023-12-24 kl 00:03 fr 1100 till 960 kl 00:48 */
-/* $max-width-mobile: 15rem;  2023-12-23 ändrat */
 .typsnitt-rubrik {
   font-family: "Merriweather", serif;
 }
@@ -6480,7 +6474,6 @@ h2,
 h3 {
   font-size: 1.4em;
   line-height: 1.4;
-  /* width: $max-width;  2023-12-09 */
   margin-bottom: 1.96rem;
 }
 
@@ -6520,12 +6513,6 @@ body {
 /* margin: 0 auto;  start 2023-12-23 kl 14:22
 }  slut */
 /* för class=header */
-/* .header {
-    /* max-width: $max-width;  /* 2023-12-23 */
-/* max-width: 98%; kommentar 2023-12-24 kl 00:46 */
-/* margin-bottom: 1.96rem;  kommentar 2023-12-23 start
-    margin: 1.96rem auto;  slut 2023-12-23
-}  */
 .header {
   background-color: #0FF;
   max-width: 98%;
@@ -6534,8 +6521,6 @@ body {
   justify-content: space-between; /* tillagt 2023-12-23 kl 23:56 */
 }
 
-/* .site-header {
-}   */
 /* för class=nav */
 .nav ul {
   display: flex;
@@ -6573,10 +6558,8 @@ img {
 }
 
 .main {
-  /* margin-bottom: 1.96rem; kommentar start 2023-12-23 
-  margin: 1.96rem auto;   slut 2023-12-23 */
   background-color: #fff;
-  max-width: 98%; /* tillagt 2023-12-23 */
+  max-width: 98%;
 }
 
 .footer {
@@ -6685,7 +6668,6 @@ img {
 }
 
 .wrapper {
-  /* max-width: 960px;  2023-12-18  */
   max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: 200px auto;
@@ -6770,19 +6752,15 @@ img {
   color: whitesmoke;
 }
 
-/* @media (max-width: 767px) {   ändrat 2023-11-26 */
-/* @media (max-width: 1200px) {  ändrat 2024-12-24 kl 00:05 */
 @media (max-width: 960px) {
   head,
   .body,
   .header,
   .main,
   .footer {
-    width: 98%; /* tillagt 2023-12-23 */
-    /* width: $max-width-tablet;  2023-12-09 kl 17:00 */
+    width: 98%;
     margin-bottom: 0.98rem;
-    margin: 0.98rem auto; /* tillagt/ändrat 2023-12-23 kl 14:30 */
-    /* margin: 0.02rem;  kommentar 2023-12-23 kl 14:28 */
+    margin: 0.98rem auto;
   }
   .header {
     flex-direction: column;
@@ -6826,20 +6804,17 @@ img {
   h3 {
     font-size: 1em;
     line-height: 0.9;
-    margin-bottom: auto; /* tillagt 2023-12-24 kl 00:58  */
+    margin-bottom: auto;
   }
 }
-/* @media (max-width: 767px) {   ändrat 2023-12-23 */
 @media (max-width: 320px) {
   head,
   .body,
   .header,
   .main,
   .footer {
-    /* width: $max-width-mobile;  ändr 2023-12-23 */
     width: 98%;
-    /* margin-bottom: 0.98rem;  ändr 2023-12-23 */
-    margin: 0 auto; /* ändr 2023-12-23 */
+    margin: 0 auto;
   }
   .header {
     flex-direction: column;
@@ -6881,10 +6856,9 @@ img {
   h1,
   h2,
   h3 {
-    /* font-size: 0.7em;  ändr 2023-12-23 */
     font-size: 0.9em;
     line-height: 0.9;
-    margin-bottom: auto; /* tillagt 2023-12-24 kl 00:58  */
+    margin-bottom: auto;
   }
   /* Change the technology.scss for mobile */
   .landingpage h1 {
