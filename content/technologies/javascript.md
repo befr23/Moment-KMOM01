@@ -2,7 +2,7 @@
 Title: JavaScript
 Description: JavaScript overview
 Template: technologies
-Date: 2023-12-16
+Date: 2023-12-23
 ---
 
 JavaScript
