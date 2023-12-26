@@ -1,13 +1,6 @@
 body {
     background-color: $background-color-body;
-    /* @include background-color;  */
-    /* width: $max-width;   kommentarmärkt  2023-12-08 start */
-    margin-bottom: 0.98rem;  /* tillagt 2023-12-23 */
-    margin: 0.98rem auto;    /* tillagt 2023-12-23 */
-    width: 98%; /* tillagt 2023-12-23 */
+    margin-bottom: 0.98rem;
+    margin: 0.98rem auto;
+    width: 98%;
 }
-
-/* .main {   2023-12-23 kl 14:22 */
-    /* width: $max-width;  /* Samma som Emils dvs 64em, kommentarmärkt 2023-12-23 */
-    /* margin: 0 auto;  start 2023-12-23 kl 14:22
-}  slut */
