@@ -2,10 +2,7 @@
     background-color: $background-color-footer;
     display: flex;
     flex-direction: row;
-    /* max-width: $max-width;   ändrat 2023-12-23 */
-    max-width: 98%;  /* tillagt 2023-12-23 */
-    /* margin-bottom: 1.96rem; kommentar start 2023-12-23 
-    margin: 1.96rem auto; slut 2023-12-23 */
+    max-width: 98%;
 }
 
 .social-text {
@@ -14,10 +11,9 @@
 }
 
 .social {
-    /* display: inherit;  2023-12-09 */
     display: flex;
-    flex-direction: row;  /* ny 2023-12-09 */
-    justify-content: flex-end;  /* ny 2023-12-09 */
+    flex-direction: row;
+    justify-content: flex-end;
     border-top: 15em;
     max-width: 25%;
 }
