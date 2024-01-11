@@ -1,0 +1,35 @@
+/* Inkludera normalize.css */
+@import '../../node_modules/normalize.css/normalize';
+
+/* Fonts from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap');
+
+/* Ikoner och fonter, från Font Awesome - start */
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+/* Ikoner och fonter, från Font Awesome - slut  */
+
+@import 'variables-dark';
+
+@import 'test';
+
+@import 'typography';
+
+@import 'base';
+
+@import 'header';
+@import 'main';
+@import 'footer';
+
+@import 'code';
+@import 'technology';
+@import 'technologies';
+
+@import 'test_css_grid';
+@import 'test_flexbox_parent';
+
+@import 'tablet-menu';
+@import 'mobile-menu';
