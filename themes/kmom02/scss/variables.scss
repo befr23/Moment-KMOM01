@@ -5,34 +5,35 @@ $font-color: #333;
 $font-alternative-color: #00008b;
 $accent-color: #ee6c4d;
 
+$background-color-body: #D0FF15;
+$background-color-header-footer: #FFD414;
+$background-color-main: #fff014;
+$background-color-a-hover: #DC143C;
+
 $max-width: 1500px;
 $max-width-tablet: 960px;
-$max-width-mobile: 320px;
+$max-width-mobile: 700px;
 
 @mixin font-size-and-more() {
     font-size: 1.4em;
     line-height: 1.4;
     margin-bottom: 1.96rem;
+    color: $font-color;
 }
 
 @mixin font-size-and-more-tablet() {
     font-size: 1em;
     line-height: 0.9;
     margin-bottom: auto;
+    color: $font-color;
 }
 
 @mixin font-size-and-more-mobile() {
     font-size: 0.9em;
     line-height: 0.9;
     margin-bottom: auto;
+    color: $font-color;
 }
-
-$background-color-body: #DDA0DD;
-$background-alternative-color: #5f9ea0;
-$background-color-header: #0FF;
-$background-color-main: #fff;
-$background-color-footer: #0ff;
-$background-color-a-hover: #DC143C;
 
 .typsnitt-rubrik {
     font-family: $header-font;
