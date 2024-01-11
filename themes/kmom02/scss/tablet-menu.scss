@@ -10,7 +10,9 @@
     }
 
     .header {
-        flex-direction: column;
+        /* flex-direction: column;  2024-01-10 bort och nya efter */
+        display: flex;
+        flex-direction: row;  /* 2024-01-10 slut här */
     }
 
     .logo {
@@ -19,7 +21,7 @@
         max-width: 0.2em;
     }
 
-    .nav ul {
+    /* .nav ul { kommentar 2024-01-10 start 
         flex-direction: column;
         padding-bottom: 1em;
     }
@@ -44,7 +46,7 @@
         line-height: 2em;
         text-align: center;
         cursor: pointer;
-    }
+    }    slut */
 
     img {
         max-width: 80%;
