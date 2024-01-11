@@ -1,0 +1,44 @@
+$header-font: 'Merriweather', serif;
+$main-font: 'Roboto', sans-serif;
+
+$font-color: #FFF;
+$font-alternative-color: #00008b;
+$accent-color: #ee6c4d;
+
+$background-color-body: #762EFF;
+$background-color-header-footer: #BC2EFF;
+$background-color-main: #FF2EFD;
+$background-color-a-hover: #DC143C;
+
+$max-width: 1500px;
+$max-width-tablet: 960px;
+$max-width-mobile: 700px;
+
+@mixin font-size-and-more() {
+    font-size: 1.4em;
+    line-height: 1.4;
+    margin-bottom: 1.96rem;
+    color: $font-color;
+}
+
+@mixin font-size-and-more-tablet() {
+    font-size: 1em;
+    line-height: 0.9;
+    margin-bottom: auto;
+    color: $font-color;
+}
+
+@mixin font-size-and-more-mobile() {
+    font-size: 0.9em;
+    line-height: 0.9;
+    margin-bottom: auto;
+    color: $font-color;
+}
+
+.typsnitt-rubrik {
+    font-family: $header-font;
+}
+
+.typsnitt-text {
+    font-family: $main-font; 
+}
