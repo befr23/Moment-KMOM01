@@ -13,6 +13,23 @@ I detta ramverk skriver man sidorna i Markdown och hanterar layouten mha Twig oc
 
 För att göra style på webbsidan har SASS används, som är en preprocessor för att göra CSS-kod.
 
+Färgpaletter som har valts, är i det ljusa alternativet enligt:
+<table style="border-spacing: 4px; border-collapse: separate">
+<tr>
+<td style="height: 50px; width: 50px; background-color: #D0FF15">
+<td style="height: 50px; width: 50px; background-color: #FFD414">
+<td style="height: 50px; width: 50px; background-color: #fff014">
+</tr>
+</table>
+I det mörka alternativet enligt:
+<table style="border-spacing: 4px; border-collapse: separate">
+<tr>
+<td style="height: 50px; width: 50px; background-color: #762EFF">
+<td style="height: 50px; width: 50px; background-color: #BC2EFF">
+<td style="height: 50px; width: 50px; background-color: #FF2EFD">
+</tr>
+</table>
+
 De ikoner jag har använt är från Font Awesome samt Google Fonts.
 
 Följande typsnitt har använts:
