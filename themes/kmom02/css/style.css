@@ -6475,6 +6475,7 @@ h3 {
   font-size: 1.4em;
   line-height: 1.4;
   margin-bottom: 1.96rem;
+  color: #333;
 }
 
 a:hover {
@@ -6497,28 +6498,23 @@ td,
 th,
 tr {
   border: 1px solid;
+  color: #333 #00008b; /*tillagt 2024-01-14 */
 }
 
 body {
-  background-color: #DDA0DD;
-  /* @include background-color;  */
-  /* width: $max-width;   kommentarmärkt  2023-12-08 start */
-  margin-bottom: 0.98rem; /* tillagt 2023-12-23 */
-  margin: 0.98rem auto; /* tillagt 2023-12-23 */
-  width: 98%; /* tillagt 2023-12-23 */
+  background-color: #D0FF15;
+  margin-bottom: 0.98rem;
+  margin: 0.98rem auto;
+  width: 98%;
 }
 
-/* .main {   2023-12-23 kl 14:22 */
-/* width: $max-width;  /* Samma som Emils dvs 64em, kommentarmärkt 2023-12-23 */
-/* margin: 0 auto;  start 2023-12-23 kl 14:22
-}  slut */
 /* för class=header */
 .header {
-  background-color: #0FF;
+  background-color: #FFD414;
   max-width: 98%;
-  display: flex; /* tillagt 2023-12-23 kl 23:56 */
-  flex-direction: row; /* tillagt 2023-12-23 kl 23:56 */
-  justify-content: space-between; /* tillagt 2023-12-23 kl 23:56 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* för class=nav */
@@ -6531,10 +6527,6 @@ body {
 
 .nav ul li {
   padding: 0 1em;
-}
-
-.nav a, .nav-toggle {
-  color: #333;
 }
 
 /* Röd textfärg då sidan är aktiv */
@@ -6558,18 +6550,15 @@ img {
 }
 
 .main {
-  background-color: #fff;
+  background-color: #FFF014;
   max-width: 98%;
 }
 
 .footer {
-  background-color: #0ff;
+  background-color: #FFD414;
   display: flex;
   flex-direction: row;
-  /* max-width: $max-width;   ändrat 2023-12-23 */
-  max-width: 98%; /* tillagt 2023-12-23 */
-  /* margin-bottom: 1.96rem; kommentar start 2023-12-23 
-  margin: 1.96rem auto; slut 2023-12-23 */
+  max-width: 98%;
 }
 
 .social-text {
@@ -6578,10 +6567,9 @@ img {
 }
 
 .social {
-  /* display: inherit;  2023-12-09 */
   display: flex;
-  flex-direction: row; /* ny 2023-12-09 */
-  justify-content: flex-end; /* ny 2023-12-09 */
+  flex-direction: row;
+  justify-content: flex-end;
   border-top: 15em;
   max-width: 25%;
 }
@@ -6589,6 +6577,10 @@ img {
 .sr-only {
   border: 1px solid #ccc;
   padding: 1rem;
+}
+
+.color-text {
+  color: white;
 }
 
 .slide {
@@ -6619,8 +6611,6 @@ img {
 
 .span1 {
   grid-column: span 1;
-  /* border: 1px solid #ccc;
-  padding: 1rem;  */
 }
 
 .span2 {
@@ -6654,12 +6644,12 @@ img {
 }
 
 .menu-tech {
-  background-color: greenyellow;
+  background-color: #adff2f;
   padding: 1em;
 }
 
 .content-text {
-  background-color: mediumaquamarine;
+  background-color: #66cdaa;
   padding: 1em;
 }
 
@@ -6738,18 +6728,18 @@ img {
 }
 
 .div1 {
-  background-color: purple;
-  color: red;
+  background-color: #800080;
+  color: #f00;
 }
 
 .div2 {
-  background-color: blue;
-  color: yellow;
+  background-color: #00f;
+  color: #ff0;
 }
 
 .div3 {
-  background-color: green;
-  color: whitesmoke;
+  background-color: #008000;
+  color: #f5f5f5;
 }
 
 @media (max-width: 960px) {
@@ -6763,36 +6753,41 @@ img {
     margin: 0.98rem auto;
   }
   .header {
-    flex-direction: column;
+    /* flex-direction: column;  2024-01-10 bort och nya efter */
+    display: flex;
+    flex-direction: row; /* 2024-01-10 slut här */
   }
   .logo {
     padding: 1em 1em 1em 0;
     margin-left: 0.1em;
     max-width: 0.2em;
   }
-  .nav ul {
-    flex-direction: column;
-    padding-bottom: 1em;
+  /* .nav ul { kommentar 2024-01-10 start 
+      flex-direction: column;
+      padding-bottom: 1em;
   }
+
   .nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
   }
+
   .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
+      display: block;
+      padding: 0.5em 0;
   }
+
   .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2.2em;
-    margin: 0.25em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
+      display: block;
+      float: right;
+      width: 2.2em;
+      margin: 0.25em 0;
+      font-size: 1.5rem;
+      line-height: 2em;
+      text-align: center;
+      cursor: pointer;
+  }    slut */
   img {
     max-width: 80%;
     display: block;
@@ -6805,9 +6800,10 @@ img {
     font-size: 1em;
     line-height: 0.9;
     margin-bottom: auto;
+    color: #333;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 700px) {
   head,
   .body,
   .header,
@@ -6859,6 +6855,7 @@ img {
     font-size: 0.9em;
     line-height: 0.9;
     margin-bottom: auto;
+    color: #333;
   }
   /* Change the technology.scss for mobile */
   .landingpage h1 {
